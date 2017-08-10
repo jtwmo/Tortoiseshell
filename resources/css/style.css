@@ -76,13 +76,14 @@ header .flex {
 }
 
 .main-banner {
+
   background-color: white;
   color: black;
   padding: .75rem 5rem;
   display: inline-block;
   margin-top: 10rem;
   margin-right: -2rem;
-  line-height: 2.4rem;
+  line-height: 1.2rem;
 }
 
 
@@ -155,4 +156,102 @@ footer {
 .copyright img {
   height: 1.5rem;
   margin-right: 1rem;
+}
+
+
+/*--MEDIA QUERIES--*/
+
+@media only screen  and (max-width: 1024px) {
+
+  header {
+    padding: 0;
+    height: 22rem;
+  }
+
+  header .container {
+    max-width: 100%;
+  }
+
+  .main-banner {
+    padding: .35rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    line-height: 2.4rem;
+  }
+}
+
+@media only screen and (max-width: 845px) {
+
+  .logo span {
+    display: none;
+  }
+
+  .big-menu {
+    display: none;
+  }
+
+  .small-menu {
+    display: inline;
+  }
+
+  header {
+    padding: 0;
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  header .flex {
+      justify-content: center;
+  }
+
+
+  .main-banner {
+    font-size: .5rem;
+    text-align: center;
+    margin: 7rem 0 0 0;
+    line-height: 2.4rem;
+    min-width: 400px;
+  }
+
+  h1 {
+    margin:0;
+  }
+
+  /*--SERVICE-GRID--*/
+
+  .service-grid {
+    margin-top: 3.77rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*--INFO-GRID--*/
+
+  .info-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .info-title {
+    width: 100%;
+    padding: .5rem;
+    text-align: center;
+  }
+
+  .info p {
+    margin-bottom: 5rem;
+  }
+  /*--FOOTER--*/
+
+  .copyright {
+    justify-content: center;
+  }
+
+  .copyright-text {
+    display: none;
+  }
 }
